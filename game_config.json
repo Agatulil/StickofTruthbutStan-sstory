@@ -1,0 +1,199 @@
+{
+    "window": {
+        "width": 800,
+        "height": 600,
+        "title": "Mini Stick of Truth"
+    },
+    "colors": {
+        "white": [
+            255,
+            255,
+            255
+        ],
+        "black": [
+            0,
+            0,
+            0
+        ],
+        "red": [
+            255,
+            0,
+            0
+        ],
+        "green": [
+            0,
+            255,
+            0
+        ],
+        "blue": [
+            0,
+            0,
+            255
+        ],
+        "dialog_bg": [
+            50,
+            50,
+            50
+        ],
+        "battle_bg": [
+            50,
+            50,
+            80
+        ]
+    },
+    "characters": {
+        "player": {
+            "name": "Warrior Stan",
+            "image": "player.png",
+            "portrait": "stan_portrait.png",
+            "width": 150,
+            "height": 150,
+            "hp": 100,
+            "default_position": [
+                100,
+                400
+            ],
+            "battle_position": [
+                200,
+                400
+            ],
+            "placeholder_color": [
+                0,
+                200,
+                0
+            ]
+        },
+        "enemies": [
+            {
+                "name": "Princess Kenny",
+                "image": "kenny.png",
+                "portrait": "kenny_portrait.png",
+                "width": 150,
+                "height": 150,
+                "hp": 80,
+                "default_position": [
+                    500,
+                    400
+                ],
+                "battle_position": [
+                    550,
+                    400
+                ],
+                "placeholder_color": [
+                    200,
+                    0,
+                    0
+                ],
+                "dialogs": [
+                    {
+                        "text": "Mfhhfh !",
+                        "portrait": "kenny_portrait.png"
+                    },
+                    {
+                        "text": "Muhuhu Fuhhnh",
+                        "portrait": "kenny_portrait.png"
+                    },
+                    {
+                        "text": "Kenny please shut your mouth",
+                        "portrait": "stan_portrait.png"
+                    }
+                ]
+            },
+            {
+                "name": "Kyle the Elf King",
+                "image": "kyle.png",
+                "portrait": "kyle_portrait.png",
+                "width": 150,
+                "height": 150,
+                "hp": 90,
+                "default_position": [
+                    600,
+                    350
+                ],
+                "battle_position": [
+                    550,
+                    400
+                ],
+                "placeholder_color": [
+                    0,
+                    100,
+                    200
+                ],
+                "dialogs": [
+                    {
+                        "text": "Behold the Elven King!",
+                        "portrait": "kyle_portrait.png"
+                    },
+                    {
+                        "text": "Hand over the Stick of Truth!",
+                        "portrait": "kyle_portrait.png"
+                    },
+                    {
+                        "text": "I'll never surrender it to you, Kyle!",
+                        "portrait": "stan_portrait.png"
+                    }
+                ]
+            }
+        ],
+        "npcs": [
+            {
+                "name": "Butters",
+                "image": "butters.png",
+                "portrait": "butters_portrait.png",
+                "width": 120,
+                "height": 120,
+                "default_position": [
+                    300,
+                    350
+                ],
+                "placeholder_color": [
+                    200,
+                    200,
+                    0
+                ],
+                "dialogs": [
+                    {
+                        "text": "Oh hamburgers!",
+                        "portrait": "butters_portrait.png"
+                    },
+                    {
+                        "text": "Gee whiz, Stan!",
+                        "portrait": "butters_portrait.png"
+                    },
+                    {
+                        "text": "What's up, Butters?",
+                        "portrait": "stan_portrait.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "battle": {
+        "actions": [
+            "Attack",
+            "Special",
+            "Item",
+            "Run"
+        ],
+        "player_move_damage": {
+            "Attack": {
+                "min": 15,
+                "max": 25
+            },
+            "Special": {
+                "min": 25,
+                "max": 40
+            }
+        },
+        "enemy_move_damage": {
+            "min": 10,
+            "max": 20
+        },
+        "heal_amount": 20
+    },
+    "game": {
+        "movement_speed": 5,
+        "interaction_distance": 150,
+        "frame_rate": 60
+    }
+}
